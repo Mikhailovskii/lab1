@@ -1,0 +1,10 @@
+
+N = int(input("Введіть ціле число N (1 < N < 9): "))
+
+
+if 1 < N < 9:
+    for i in range(N, 0, -1):
+        row = "".join(str(j) for j in range(1, i + 1))
+        print(row.ljust(N))  # Вирівнюємо рядок вліво за допомогою ljust
+else:
+    print("Введене число не відповідає обмеженням (1 < N < 9).")
